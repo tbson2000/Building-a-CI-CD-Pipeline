@@ -56,6 +56,7 @@ steps:
 
 - task: AzureRmWebAppDeployment@4
   inputs:
+    ConnectionType: 'AzureRM'
     azureSubscription: 'UdacityDS - 81 (7de72e36-dc87-4e3f-aa67-6dacbc9993c6)-1512'
     appType: 'webAppLinux'
     WebAppName: 'udacity-pythonwebapp'
