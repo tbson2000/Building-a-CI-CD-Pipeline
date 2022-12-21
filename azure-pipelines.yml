@@ -9,24 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-# resources:
-#   repositories:
-#   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-#     type: github  # see the following "Type" topic
-#     name: string  # repository name (format depends on `type`)
-#     ref: string  # ref name to use; defaults to 'refs/heads/main'
-#     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
-#     trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
-#       branches:
-#         include: [ string ] # branch names which trigger a build
-
-#       tags:
-#         include: [ string ] # tag names which trigger a build
-#         exclude: [ string ] # tag names which won't
-#       paths:
-#         include: [ string ] # file paths which must match to trigger a build
-#         exclude: [ string ] # file paths which won't trigger a build
-
 steps:
 - task: UsePythonVersion@0
   inputs:
@@ -57,8 +39,8 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'dcmsonto'
+    azureSubscription: 'UdacityProject2'
     appType: 'webAppLinux'
-    WebAppName: 'udacity-pythonwebapp'
+    WebAppName: 'UdacityTest2'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     RuntimeStack: 'PYTHON|3.7'
