@@ -32,18 +32,15 @@ steps:
      archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
      replaceExistingArchive: true
 
-- publish: $(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip
+- upload: $(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip
   displayName: 'Upload package'
   artifact: drop
 
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(69fd5a00-b5f3-4a12-bf4e-a0247f93071b)'
+    azureSubscription: 'Azure subscription 1(1)(69fd5a00-b5f3-4a12-bf4e-a0247f93071b)'
     appType: 'webAppLinux'
     WebAppName: 'udacity-2nd'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'Udacity'
-    SlotName: 'production'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     RuntimeStack: 'PYTHON|3.7'
