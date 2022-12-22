@@ -42,5 +42,8 @@ steps:
     azureSubscription: 'Azure subscription 1(69fd5a00-b5f3-4a12-bf4e-a0247f93071b)'
     appType: 'webAppLinux'
     WebAppName: 'udacity-2nd'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'Udacity'
+    SlotName: 'production'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     RuntimeStack: 'PYTHON|3.7'
