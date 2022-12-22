@@ -44,3 +44,4 @@ steps:
     WebAppName: 'udacity-2nd'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
     RuntimeStack: 'PYTHON|3.7'
+    AppSettings: '-SCM_DO_BUILD_DURING_DEPLOYMENT 1'
