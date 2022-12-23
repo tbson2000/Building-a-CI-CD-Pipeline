@@ -34,6 +34,11 @@ The target is to Azure App Service as a build server and the host server for our
 ```bash
 az webapp deploy --resource-group <group-name> --name <app-name> --src-path <zip-package-path>
 ```
+## Locust Test
+![alt text](img/locust_test.png)
+
+![alt text](img/locust_report.png)
+
 
 ## The results
 * Project cloned into Azure Cloud Shell via ssh-keygen
