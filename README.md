@@ -1,9 +1,14 @@
+![alt text](https://github.com/tbson2000/Building-a-CI-CD-Pipeline/actions/workflows/pythonapp.yml/badge.svg)
 # Building-a-CI-CD-Pipeline
 This repo is for demoing the automatic deployment to Microsoft Azure App Services using GitHub and Microsoft Azure DevOps pipeline
 
+## Architecture Design
+
+![alt text](img/architecture_design.png)
+
 ## Project Plan
 
-* Link to a Trello board for the project: https://trello.com/b/AalthnSg/building-a-ci-cd-pipeline
+* Link to a Trello board for the project: https://trello.com/invite/b/AalthnSg/ATTI63258c199ed9c8bab5330c1399d6f1feA0D99BAF/building-a-ci-cd-pipeline
 * Link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1LnnSzQoUgYn1PNJ298oeihu4lGiwkjj7/edit?usp=sharing&ouid=103611967912540949340&rtpof=true&sd=true
 
 ## Instructions
